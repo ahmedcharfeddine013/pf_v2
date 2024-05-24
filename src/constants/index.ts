@@ -59,10 +59,10 @@ export const skillsList = [
     name: "Node Js",
     img: node,
   },
-  {
-    name: "Express Js",
-    img: express,
-  },
+//   {
+//     name: "Express Js",
+//     img: express,
+//   },
   {
     name: "Mongo DB",
     img: mongo,

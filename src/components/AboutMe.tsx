@@ -25,7 +25,7 @@ const AboutMe = () => {
   return (
     <section className="flex items-center justify-center flex-col gap-10 py-10 relative about-me-gradient">
       <SectionHeader title="About Me" />
-      <div className="w-[80%] p-6 rounded-lg outline-none z-[10] ">
+      <div className=" w-full md:w-[80%] p-6 rounded-lg outline-none z-[10] ">
         <p id="details" className="opacity-0 translate-y-20">
           I&apos;m <span>Ahmed Charfeddine</span>, a budding talent in the world
           of technology, specializing in <span>Frontend Development</span>.
