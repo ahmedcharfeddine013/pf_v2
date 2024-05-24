@@ -4,36 +4,29 @@ import React, { useEffect, useRef } from "react";
 import SectionHeader from "./SectionHeader";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import { animateWithGsap } from "@/utils/animations";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutMe = () => {
-  const sectionsRef = useRef([]);
-
-  useEffect(() => {
-    sectionsRef.current.forEach((section, index) => {
-      gsap.fromTo(
-        section,
-        { opacity: 0, y: 50 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          scrollTrigger: {
-            trigger: section,
-            start: "top 75%", // Trigger the animation when the top of the element is 75% from the top of the viewport
-            end: "bottom 25%", // End the animation when the bottom of the element is 25% from the top of the viewport
-            toggleActions: "play none none reverse", // Play the animation when in view, and reverse when out of view
-          },
-        }
-      );
-    });
+  useGSAP(() => {
+    animateWithGsap(
+      "#details",
+      { y: 0, opacity: 1, ease: "power2.inOut", duration: 1, delay: 0.4 },
+      {}
+    );
+    animateWithGsap(
+      "#about-me-title",
+      { x: 0, opacity: 1, ease: "power2.inOut", duration: 1, delay: 0.2 },
+      {}
+    );
   }, []);
   return (
     <section className="flex items-center justify-center flex-col gap-10 py-10 relative about-me-gradient">
       <SectionHeader title="About Me" />
-      <div className="w-[80%] p-6 rounded-lg outline-none   z-[10] ">
-        <p>
+      <div className="w-[80%] p-6 rounded-lg outline-none z-[10] ">
+        <p id="details" className="opacity-0 translate-y-20">
           I&apos;m <span>Ahmed Charfeddine</span>, a budding talent in the world
           of technology, specializing in <span>Frontend Development</span>.
           Armed with a solid foundation in Mathematics from my recent{" "}
