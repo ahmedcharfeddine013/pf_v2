@@ -30,9 +30,9 @@ const AboutMe = () => {
     });
   }, []);
   return (
-    <section className="flex items-center justify-center flex-col gap-10 py-10">
+    <section className="flex items-center justify-center flex-col gap-10 py-10 relative about-me-gradient">
       <SectionHeader title="About Me" />
-      <div className="w-[80%] border-4 p-6 rounded-lg outline-none border-primary/50">
+      <div className="w-[80%] p-6 rounded-lg outline-none   z-[10] ">
         <p>
           I&apos;m <span>Ahmed Charfeddine</span>, a budding talent in the world
           of technology, specializing in <span>Frontend Development</span>.
@@ -48,6 +48,8 @@ const AboutMe = () => {
           big and small. Let&apos;s turn visions into reality together!
         </p>
       </div>
+      <div className="bg-gradient-to-t from-background to-transparent absolute bottom-0 w-full h-[40%]  "></div>
+      <div className="bg-gradient-to-b from-background to-transparent absolute top-0 w-full h-[40%]"></div>
     </section>
   );
 };
