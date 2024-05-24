@@ -17,15 +17,6 @@ const Hero = () => {
   const job = useRef(null);
   const name = useRef(null);
   useGSAP(() => {
-    // gsap.to(".hero-text", {
-    //   opacity: 1,
-    //   y: 0,
-    //   stagger: 0.5,
-    //   delay: 1,
-    //   duration: 0.2,
-    //   ease: "power3.out",
-    // });
-    // gsap.to("#hero-button", { opacity: 1, x: 0, delay: 2 });
     animateWithGsap(
       ".hero-text",
       {
@@ -40,19 +31,6 @@ const Hero = () => {
     animateWithGsap("#hero-button", { opacity: 1, x: 0, delay: 0.2 }, {});
   }, []);
 
-  //   useLayoutEffect(() => {
-  //     gsap.registerPlugin(ScrollTrigger);
-  //     const timeline = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: document.documentElement,
-  //         start: "top",
-  //         end: "+=500px",
-  //         scrub: true,
-  //         markers: true,
-  //       },
-  //     });
-  //     timeline.from(name.current, { y: 0 }).to(name.current, { translateY: 200 });
-  //   }, []);
   return (
     <section className="w-full h-screen hero-gradient relative overflow-hidden">
       <div className="w-full h-full flex flex-col gap-5 items-center justify-center">
