@@ -11,20 +11,33 @@ import { Laptop } from "lucide-react";
 import Circle from "./Circle";
 import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
 import HeroButton from "./HeroButton";
+import { animateWithGsap } from "@/utils/animations";
 
 const Hero = () => {
   const job = useRef(null);
   const name = useRef(null);
   useGSAP(() => {
-    gsap.to(".hero-text", {
-      opacity: 1,
-      y: 0,
-      stagger: 0.5,
-      delay: 1,
-      duration: 0.2,
-      ease: "power3.out",
-    });
-    gsap.to("#hero-button", { opacity: 1, x: 0, delay: 2 });
+    // gsap.to(".hero-text", {
+    //   opacity: 1,
+    //   y: 0,
+    //   stagger: 0.5,
+    //   delay: 1,
+    //   duration: 0.2,
+    //   ease: "power3.out",
+    // });
+    // gsap.to("#hero-button", { opacity: 1, x: 0, delay: 2 });
+    animateWithGsap(
+      ".hero-text",
+      {
+        opacity: 1,
+        y: 0,
+        delay: 0.1,
+        duration: 0.2,
+        ease: "power3.out",
+      },
+      {}
+    );
+    animateWithGsap("#hero-button", { opacity: 1, x: 0, delay: 0.2 }, {});
   }, []);
 
   //   useLayoutEffect(() => {
