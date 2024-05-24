@@ -27,6 +27,7 @@ export default function Home() {
       <div className="px-20">
         <AboutMe />
       </div>
+      <CirclesBackground />
     </main>
   );
 }

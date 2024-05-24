@@ -23,6 +23,7 @@
     --border: 215 27.9% 16.9%;
     --input: 215 27.9% 16.9%;
     --ring: 263.4 70% 50.4%;
+    --radius: 1rem;
   }
 }
 
@@ -49,12 +50,11 @@
     rgba(66, 0, 128, 0.2),
     transparent
   );
-  
 }
 
 .hero-text {
-  opacity:  0;
-  transform: translateY(200px)
+  opacity: 0;
+  transform: translateY(200px);
 }
 
 /* radial-gradient(circle at 50% 100%, rgba(var(--ar), .7) 30%, var(--b) 75%), 50% bottom */

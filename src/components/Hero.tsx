@@ -10,6 +10,7 @@ import { BackgroundCircles } from "./hero/Hero";
 import { Laptop } from "lucide-react";
 import Circle from "./Circle";
 import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
+import HeroButton from "./HeroButton";
 
 const Hero = () => {
   const job = useRef(null);
@@ -23,21 +24,22 @@ const Hero = () => {
       duration: 0.2,
       ease: "power3.out",
     });
+    gsap.to("#hero-button", { opacity: 1, x: 0, delay: 2 });
   }, []);
 
-//   useLayoutEffect(() => {
-//     gsap.registerPlugin(ScrollTrigger);
-//     const timeline = gsap.timeline({
-//       scrollTrigger: {
-//         trigger: document.documentElement,
-//         start: "top",
-//         end: "+=500px",
-//         scrub: true,
-//         markers: true,
-//       },
-//     });
-//     timeline.from(name.current, { y: 0 }).to(name.current, { translateY: 200 });
-//   }, []);
+  //   useLayoutEffect(() => {
+  //     gsap.registerPlugin(ScrollTrigger);
+  //     const timeline = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: document.documentElement,
+  //         start: "top",
+  //         end: "+=500px",
+  //         scrub: true,
+  //         markers: true,
+  //       },
+  //     });
+  //     timeline.from(name.current, { y: 0 }).to(name.current, { translateY: 200 });
+  //   }, []);
   return (
     <section className="w-full h-screen hero-gradient relative overflow-hidden">
       <div className="w-full h-full flex flex-col gap-5 items-center justify-center">
@@ -50,8 +52,12 @@ const Hero = () => {
         >
           Ahmed Charfeddine
         </h1>
+        <div className="py-5">
+          <HeroButton />
+        </div>
       </div>
       <div className="bg-gradient-to-t from-background to-transparent absolute bottom-0 w-full h-24"></div>
+      {/* <BackgroundCircles /> */}
     </section>
   );
 };
