@@ -98,7 +98,7 @@
   }
 
   .link {
-    @apply text-blue hover:underline cursor-pointer flex items-center text-xl opacity-0 translate-y-20;
+    @apply hover:underline cursor-pointer flex items-center text-xl opacity-0 translate-y-20;
   }
 
   .control-btn {
