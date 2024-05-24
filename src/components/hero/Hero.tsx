@@ -28,7 +28,7 @@ export const BackgroundCircles = ({ parallaxRef }: any) => {
   }, []);
 
   return (
-    <div className="background_circle absolute -top-[42.375rem] left-1/2 w-[78rem] aspect-square border-none border-n-2/5  -translate-x-1/2 md:-top-[38.5rem] xl:-top-[32rem]">
+    <div className="background_circle absolute hidden md:block -top-[42.375rem] left-1/2 w-[78rem] aspect-square border-none border-n-2/5  -translate-x-1/2 md:-top-[38.5rem] xl:-top-[32rem]">
       {/* <Rings /> */}
 
       {/* Moving background colored circle balls */}

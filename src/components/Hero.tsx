@@ -7,23 +7,25 @@ import { ScrollParallax } from "react-just-parallax";
 import heroIcons from "../../public/assests/4-small.png";
 import Image from "next/image";
 import { BackgroundCircles } from "./hero/Hero";
+import { Laptop } from "lucide-react";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
   useGSAP(() => {
     gsap.to("#title", { opacity: 1, y: 0, delay: 1 });
     gsap.to("#desc", { opacity: 1, y: 0, delay: 1.5 });
+    gsap.to("#hero_img", { opacity: 1, y: 0, delay: 1.5 });
   }, []);
   return (
-    <section className="w-full nav-height relative">
+    <section className="w-full nav-height relative overflow-hidden">
       <div
-        className="h-5/6 relative w-full grid grid-cols-2 place-items-center px-20 space-y-6"
+        className="h-5/6 relative w-full grid grid-cols-1 md:grid-cols-2 place-items-center   p-10 md:px-20 space-y-3 md:space-y-6"
         ref={parallaxRef}
       >
-        <div className="text-left flex flex-col items-start justify-start gap-6">
+        <div className=" flex flex-col items-center md:items-start text-center md:text-left justify-start md:gap-6">
           <h1
             id="title"
-            className="hero-title translate-y-40 text-3xl md:text-[4rem] "
+            className="hero-title translate-y-40 md:text-left text-3xl xl:text-[3rem] "
           >
             Ahmed Charfeddine
           </h1>
@@ -36,7 +38,10 @@ const Hero = () => {
             create something amazing!{" "}
           </p>
         </div>
-        <BackgroundCircles parallaxRef={parallaxRef} />
+        <div id="hero_img" className="opacity-0   translate-y-20">
+          <Laptop className="h-48 w-48 text-blue-400" />
+        </div>
+        {/* <BackgroundCircles parallaxRef={parallaxRef} /> */}
       </div>
     </section>
   );
