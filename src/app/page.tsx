@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import CirclesBackground from "../components/CirclesBackground";
 import AboutMe from "@/components/AboutMe";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   // useEffect(() => {
@@ -26,6 +27,7 @@ export default function Home() {
       <Hero />
       <div className="px-20">
         <AboutMe />
+        <Skills />
       </div>
       <CirclesBackground />
     </main>
