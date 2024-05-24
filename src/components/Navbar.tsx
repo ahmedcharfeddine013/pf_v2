@@ -4,17 +4,35 @@ import { logo } from "@/utils";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { navLists } from "../constants/index";
 
 const Navbar = () => {
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else setScrolling(false);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
+
   useGSAP(() => {
     gsap.to("#logo", { opacity: 1, y: 0 });
     gsap.to(".sectionLink", { opacity: 1, x: 0, stagger: 0.1, delay: 0.5 });
   }, []);
   return (
-    <header className="w-full py-5 sm:px-10 px-5 flex  bg-transparent fixed justify-between items-center z-50">
-      <nav className="flex w-full screen-max-width  justify-center">
+    <header
+      className={`${
+        scrolling ? "bg-white text-primary" : "text-white"
+      } w-full py-5 sm:px-10 px-5 flex transition  bg-transparent fixed justify-between items-center z-50`}
+    >
+      <nav className="flex w-full screen-max-width  items-center justify-center">
         <Image
           id="logo"
           src={logo}
