@@ -13,7 +13,7 @@ const Navbar = () => {
     gsap.to(".sectionLink", { opacity: 1, x: 0, stagger: 0.1, delay: 0.5 });
   }, []);
   return (
-    <header className="w-full py-5 sm:px-10 px-5 flex justify-between items-center z-50">
+    <header className="w-full py-5 sm:px-10 px-5 flex  bg-transparent fixed justify-between items-center z-50">
       <nav className="flex w-full screen-max-width  justify-center">
         <Image
           id="logo"
