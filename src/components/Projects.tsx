@@ -58,7 +58,7 @@ const Projects = () => {
       >
         Projects
       </h1>
-      <div className="w-[80%] p-6 flex justify-center flex-col flex-wrap gap-10 items-center rounded-lg outline-none z-[10] ">
+      <div className="w-[80%] p-6 flex justify-center flex-col flex-wrap gap-10 items-center rounded-lg outline-none z-[10] pb-20 ">
         {projectsLiist.map((project) => (
           <div
             key={project.id}

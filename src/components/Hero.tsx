@@ -7,7 +7,7 @@ import { ScrollParallax } from "react-just-parallax";
 import heroIcons from "../../public/assests/4-small.png";
 import Image from "next/image";
 import { BackgroundCircles } from "./hero/Hero";
-import { Laptop } from "lucide-react";
+import { Github, Laptop, Linkedin } from "lucide-react";
 import Circle from "./Circle";
 import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
 import HeroButton from "./HeroButton";
@@ -29,6 +29,11 @@ const Hero = () => {
       {}
     );
     animateWithGsap("#hero-button", { opacity: 1, x: 0, delay: 0.2 }, {});
+    animateWithGsap(
+      ".social-link",
+      { opacity: 1, x: 0, delay: 0.2, rotate: 0, ease: "power3.out" },
+      {}
+    );
   }, []);
 
   return (
@@ -43,6 +48,18 @@ const Hero = () => {
         >
           Ahmed Charfeddine
         </h1>
+        <div className="flex justify-center flex-row flex-wrap gap-3 items-center rounded-lg outline-none z-[10] ">
+          <a href="https://github.com/ahmedcharfeddine013">
+            <div className="opacity-0 -translate-x-20 rotate-180 social-link border-2 p-3 rounded-full border-primary hover:bg-primary transition-all duration-100 ease-in ">
+              <Github />
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/ahmed-charfeddine-677156245/">
+            <div className="opacity-0 translate-x-20 rotate-180 social-link border-2 p-3 rounded-full border-primary hover:bg-primary  transition-all duration-100 ease-in ">
+              <Linkedin />
+            </div>
+          </a>
+        </div>
         <div className="py-5">
           <HeroButton />
         </div>

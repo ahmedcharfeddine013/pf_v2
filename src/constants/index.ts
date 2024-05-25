@@ -13,6 +13,9 @@ import express from "../../public/assests/express-109.svg";
 import mongo from "../../public/assests/mongodb-icon-1.svg";
 import netfix_clone from "../../public/projects/netflix.jpg";
 import pf from "../../public/projects/portfolio.png";
+import threepo from "../../public/projects/threepo.png";
+import pf2 from "../../public/projects/pf.png";
+import iphone from "../../public/projects/iphone.png";
 
 export const navLists = ["Home", "About Me", "Skills", "Projects"];
 
@@ -88,5 +91,29 @@ export const projectsLiist = [
     imagePath: pf,
     githubLink:
       "https://github.com/ahmedcharfeddine013/portfolio_ahmed_charfeddine",
+  },
+  {
+    id: "3",
+    name: "Iphone 15 Showcase",
+    description:
+      "This portfolio was made using Next Js for development. It's nothing but a simple pleasing portfolio. I have used several technologies such as tailwind css, ShadCn UI, ... This Project is open to be used as a template for easier work.",
+    imagePath: iphone,
+    githubLink: "",
+  },
+  {
+    id: "4",
+    name: "Threepo",
+    description:
+      "This portfolio was made using Next Js for development. It's nothing but a simple pleasing portfolio. I have used several technologies such as tailwind css, ShadCn UI, ... This Project is open to be used as a template for easier work.",
+    imagePath: threepo,
+    githubLink: "",
+  },
+  {
+    id: "5",
+    name: "Portfolio Project v2",
+    description:
+      "This portfolio was made using Next Js for development. It's nothing but a simple pleasing portfolio. I have used several technologies such as tailwind css, ShadCn UI, ... This Project is open to be used as a template for easier work.",
+    imagePath: pf2,
+    githubLink: "",
   },
 ];
