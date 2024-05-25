@@ -11,6 +11,8 @@ import prisma from "../../public/assests/prisma-4.svg";
 import node from "../../public/assests/nodejs-3.svg";
 import express from "../../public/assests/express-109.svg";
 import mongo from "../../public/assests/mongodb-icon-1.svg";
+import netfix_clone from "../../public/projects/netflix.jpg";
+import pf from "../../public/projects/portfolio.png";
 
 export const navLists = ["Home", "About Me", "Skills", "Projects"];
 
@@ -69,4 +71,22 @@ export const skillsList = [
   },
 ];
 
-export const projectsList = [];
+export const projectsLiist = [
+  {
+    id: "1",
+    name: "Nextflix Clone",
+    description:
+      "In this Project i have tried to test my experience in real project and Just decided to make this Netflix UI.",
+    imagePath: netfix_clone,
+    githubLink: "https://github.com/ahmedcharfeddine013/Netflix-Clone",
+  },
+  {
+    id: "2",
+    name: "Portfolio Project",
+    description:
+      "This portfolio was made using Next Js for development. It's nothing but a simple pleasing portfolio. I have used several technologies such as tailwind css, ShadCn UI, ... This Project is open to be used as a template for easier work.",
+    imagePath: pf,
+    githubLink:
+      "https://github.com/ahmedcharfeddine013/portfolio_ahmed_charfeddine",
+  },
+];
