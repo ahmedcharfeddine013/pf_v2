@@ -64,10 +64,6 @@ export const skillsList = [
     name: "Node Js",
     img: node,
   },
-  //   {
-  //     name: "Express Js",
-  //     img: express,
-  //   },
   {
     name: "Mongo DB",
     img: mongo,
@@ -98,7 +94,7 @@ export const projectsLiist = [
     description:
       "This portfolio was made using Next Js for development. It's nothing but a simple pleasing portfolio. I have used several technologies such as tailwind css, ShadCn UI, ... This Project is open to be used as a template for easier work.",
     imagePath: iphone,
-    githubLink: "",
+    githubLink: "https://github.com/ahmedcharfeddine013/iphone",
   },
   {
     id: "4",
@@ -106,7 +102,7 @@ export const projectsLiist = [
     description:
       "This portfolio was made using Next Js for development. It's nothing but a simple pleasing portfolio. I have used several technologies such as tailwind css, ShadCn UI, ... This Project is open to be used as a template for easier work.",
     imagePath: threepo,
-    githubLink: "",
+    githubLink: "https://github.com/ahmedcharfeddine013/movie_catalog_synexoo",
   },
   {
     id: "5",
@@ -114,6 +110,6 @@ export const projectsLiist = [
     description:
       "This portfolio was made using Next Js for development. It's nothing but a simple pleasing portfolio. I have used several technologies such as tailwind css, ShadCn UI, ... This Project is open to be used as a template for easier work.",
     imagePath: pf2,
-    githubLink: "",
+    githubLink: "https://github.com/ahmedcharfeddine013/pf_v2",
   },
 ];

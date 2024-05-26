@@ -6,6 +6,7 @@ import gsap from "gsap";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { navLists } from "../constants/index";
+import Link from "next/link";
 
 const Navbar = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -43,12 +44,13 @@ const Navbar = () => {
         />
         <div className="flex flex-1 justify-center max-sm:hidden">
           {navLists.map((nav) => (
-            <div
+            <Link
+              href={`#${nav}`}
               key={nav}
               className="sectionLink px-5 text-sm cursor-pointer translate-x-40 opacity-0 text-gray hover:text-primary transition-all"
             >
               {nav}
-            </div>
+            </Link>
           ))}
         </div>
       </nav>

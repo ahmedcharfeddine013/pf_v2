@@ -29,7 +29,10 @@ const Skills = () => {
     );
   }, []);
   return (
-    <section className="flex items-center justify-center flex-col gap-10 py-10 relative about-me-gradient z-0">
+    <section
+      id="Skills"
+      className="flex items-center justify-center flex-col gap-10 py-10 relative about-me-gradient z-0"
+    >
       <h1
         id="skills-header"
         className="text-4xl z-[50] opacity-0 -translate-x-20 font-bold text-primary/90 "

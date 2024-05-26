@@ -37,7 +37,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="w-full h-screen hero-gradient relative overflow-hidden">
+    <section id="Home" className="w-full h-screen hero-gradient relative overflow-hidden">
       <div className="w-full h-full flex flex-col gap-5 items-center justify-center">
         <p ref={job} className="hero-text text-purple-500">
           Web Developer
