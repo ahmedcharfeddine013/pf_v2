@@ -4,7 +4,6 @@ import { useGSAP } from "@gsap/react";
 import { Link } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 const Projects = () => {
   useGSAP(() => {
@@ -84,7 +83,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      <div className="bg-gradient-to-t from-background to-transparent absolute bottom-0 w-full h-[40%]  "></div>
+      <div className="bg-gradient-to-t from-background to-transparent absolute bottom-0 w-full h-[40%]"></div>
       <div className="bg-gradient-to-b from-background to-transparent absolute top-0 w-full h-[40%]"></div>
     </section>
   );
