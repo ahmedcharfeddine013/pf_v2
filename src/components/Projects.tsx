@@ -61,34 +61,9 @@ const Projects = () => {
       >
         Projects
       </h1>
-      <div className="w-[80%] p-6 flex justify-center flex-col flex-wrap gap-10 items-center rounded-lg outline-none z-[10] pb-20 ">
+      <div className="w-[80%] p-6 flex justify-center flex-col sm:grid sm:grid-cols-2 flex-wrap gap-10 items-center rounded-lg outline-none z-[10] pb-20 ">
         {projectsList.map((project) => (
           <ProjectCard key={project.id} project={project} />
-          // <div
-          //   key={project.id}
-          //   className="flex flex-col items-center justify-center gap-5"
-          // >
-          //   <div className="flex items-center justify-center rounded-xl overflow-hidden border-2 border-primary opacity-0 translate-y-20 project-img ">
-          //     <Image
-          //       src={project.imagePath}
-          //       alt=""
-          //       width={500}
-          //       height={500}
-          //       objectFit="cover"
-          //     />
-          //   </div>
-          //   <div className="flex items-center gap-4 ">
-          //     <h1 className="text-xl opacity-0 translate-y-20 project-title">
-          //       {project.name}
-          //     </h1>
-          //     <a
-          //       href={project.githubLink}
-          //       className="project-link translate-y-20 opacity-0"
-          //     >
-          //       <Link />
-          //     </a>
-          //   </div>
-          // </div>
         ))}
       </div>
       <div className="bg-gradient-to-t from-background to-transparent absolute bottom-0 w-full h-[40%]"></div>

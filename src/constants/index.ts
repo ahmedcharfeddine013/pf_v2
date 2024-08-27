@@ -108,8 +108,8 @@ export const projectsList = [
       "This portfolio was made using Next Js for development. It's nothing but a simple pleasing portfolio. I have used several technologies such as tailwind css, ShadCn UI, ... This Project is open to be used as a template for easier work.",
     imagePath: threepo,
     githubLink: "https://github.com/ahmedcharfeddine013/movie_catalog_synexoo",
-    status: "completed",
-    liveLink: "",
+    status: "In Progress",
+    liveLink: "https://movie-catalog-synexoo.vercel.app/",
   },
   {
     id: "5",

@@ -31,7 +31,7 @@ const Navbar = () => {
     <header
       className={`${
         scrolling ? "bg-white text-primary" : "text-white"
-      } w-full sm:flex py-5 sm:px-10 px-5 hidden transition  bg-transparent fixed justify-between items-center z-50`}
+      } w-full sm:flex py-5 sm:px-10 px-5 hidden transition shadow-sm bg-transparent fixed justify-between items-center z-50`}
     >
       <nav className="flex w-full screen-max-width  items-center justify-center">
         <Image
@@ -45,7 +45,7 @@ const Navbar = () => {
         <div className="flex flex-1 justify-center max-sm:hidden">
           {navLists.map((nav) => (
             <Link
-              href={`#${nav}`}
+              href={`/#${nav}`}
               key={nav}
               className="sectionLink px-5 text-sm cursor-pointer translate-x-40 opacity-0 text-gray hover:text-primary transition-all"
             >

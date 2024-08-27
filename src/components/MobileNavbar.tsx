@@ -51,7 +51,7 @@ const MobileNavbar = () => {
               <nav className="flex h-full flex-col gap-6 pt-16 text-white">
                 {navLists.map((link) => (
                   <SheetClose asChild key={link}>
-                    <Link href={`#${link}`}>{link}</Link>
+                    <Link href={`/#${link}`}>{link}</Link>
                   </SheetClose>
                 ))}
               </nav>
