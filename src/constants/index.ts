@@ -9,7 +9,6 @@ import next from "../../public/assests/next-js.svg";
 import material from "../../public/assests/material-ui-1.svg";
 import prisma from "../../public/assests/prisma-4.svg";
 import node from "../../public/assests/nodejs-3.svg";
-import express from "../../public/assests/express-109.svg";
 import mongo from "../../public/assests/mongodb-icon-1.svg";
 import netfix_clone from "../../public/projects/netflix.jpg";
 import pf from "../../public/projects/portfolio.png";

@@ -2,17 +2,16 @@
 
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import Image from "next/image";
-import CirclesBackground from "../components/CirclesBackground";
 import AboutMe from "@/components/AboutMe";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
-import Contact from "../components/Contact";
+import MobileNavbar from "@/components/MobileNavbar";
 
 export default function Home() {
   return (
     <main className="bg-background relative">
       <Navbar />
+      <MobileNavbar />
       <Hero />
       <div className="md:px-20">
         <AboutMe />

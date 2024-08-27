@@ -31,7 +31,7 @@ const Navbar = () => {
     <header
       className={`${
         scrolling ? "bg-white text-primary" : "text-white"
-      } w-full py-5 sm:px-10 px-5 flex transition  bg-transparent fixed justify-between items-center z-50`}
+      } w-full sm:flex py-5 sm:px-10 px-5 hidden transition  bg-transparent fixed justify-between items-center z-50`}
     >
       <nav className="flex w-full screen-max-width  items-center justify-center">
         <Image
