@@ -70,9 +70,9 @@ const Hero = () => {
             </div>
           </a>
         </div>
-        <div className="py-5">
+        {/* <div className="py-5">
           <HeroButton />
-        </div>
+        </div> */}
       </div>
       <div className="bg-gradient-to-t from-background to-transparent absolute bottom-0 w-full h-24"></div>
     </section>
