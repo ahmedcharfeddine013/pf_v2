@@ -69,7 +69,7 @@ export const skillsList = [
   },
 ];
 
-export const projectsLiist = [
+export const projectsList = [
   {
     id: "1",
     name: "Nextflix Clone",
@@ -77,6 +77,8 @@ export const projectsLiist = [
       "In this Project i have tried to test my experience in real project and Just decided to make this Netflix UI.",
     imagePath: netfix_clone,
     githubLink: "https://github.com/ahmedcharfeddine013/Netflix-Clone",
+    status: "completed",
+    liveLink: "",
   },
   {
     id: "2",
@@ -86,6 +88,8 @@ export const projectsLiist = [
     imagePath: pf,
     githubLink:
       "https://github.com/ahmedcharfeddine013/portfolio_ahmed_charfeddine",
+    status: "completed",
+    liveLink: "",
   },
   {
     id: "3",
@@ -94,6 +98,8 @@ export const projectsLiist = [
       "This portfolio was made using Next Js for development. It's nothing but a simple pleasing portfolio. I have used several technologies such as tailwind css, ShadCn UI, ... This Project is open to be used as a template for easier work.",
     imagePath: iphone,
     githubLink: "https://github.com/ahmedcharfeddine013/iphone",
+    status: "completed",
+    liveLink: "",
   },
   {
     id: "4",
@@ -102,6 +108,8 @@ export const projectsLiist = [
       "This portfolio was made using Next Js for development. It's nothing but a simple pleasing portfolio. I have used several technologies such as tailwind css, ShadCn UI, ... This Project is open to be used as a template for easier work.",
     imagePath: threepo,
     githubLink: "https://github.com/ahmedcharfeddine013/movie_catalog_synexoo",
+    status: "completed",
+    liveLink: "",
   },
   {
     id: "5",
@@ -110,5 +118,7 @@ export const projectsLiist = [
       "This portfolio was made using Next Js for development. It's nothing but a simple pleasing portfolio. I have used several technologies such as tailwind css, ShadCn UI, ... This Project is open to be used as a template for easier work.",
     imagePath: pf2,
     githubLink: "https://github.com/ahmedcharfeddine013/pf_v2",
+    status: "completed",
+    liveLink: "",
   },
 ];

@@ -10,8 +10,7 @@ import MobileNavbar from "@/components/MobileNavbar";
 export default function Home() {
   return (
     <main className="bg-background relative">
-      <Navbar />
-      <MobileNavbar />
+   
       <Hero />
       <div className="md:px-20">
         <AboutMe />

@@ -1,4 +1,4 @@
-import { projectsLiist } from "@/constants";
+import { projectsList } from "@/constants";
 import { animateWithGsap } from "@/utils/animations";
 import { useGSAP } from "@gsap/react";
 import { Link } from "lucide-react";
@@ -50,7 +50,10 @@ const Projects = () => {
     );
   }, []);
   return (
-    <section id="Projects" className="flex items-center justify-center flex-col gap-10 py-10 relative about-me-gradient z-0">
+    <section
+      id="Projects"
+      className="flex items-center justify-center flex-col gap-10 py-10 relative about-me-gradient z-0"
+    >
       <h1
         id="projects-header"
         className="text-4xl z-[50] opacity-0 -translate-x-20 font-bold text-primary/90 "
@@ -58,7 +61,7 @@ const Projects = () => {
         Projects
       </h1>
       <div className="w-[80%] p-6 flex justify-center flex-col flex-wrap gap-10 items-center rounded-lg outline-none z-[10] pb-20 ">
-        {projectsLiist.map((project) => (
+        {projectsList.map((project) => (
           <div
             key={project.id}
             className="flex flex-col items-center justify-center gap-5"
@@ -76,7 +79,10 @@ const Projects = () => {
               <h1 className="text-xl opacity-0 translate-y-20 project-title">
                 {project.name}
               </h1>
-              <a href={project.githubLink} className="project-link translate-y-20 opacity-0">
+              <a
+                href={project.githubLink}
+                className="project-link translate-y-20 opacity-0"
+              >
                 <Link />
               </a>
             </div>

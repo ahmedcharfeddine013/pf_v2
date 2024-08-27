@@ -23,21 +23,31 @@ const Hero = () => {
         opacity: 1,
         y: 0,
         delay: 0.1,
-        duration: 0.2,
+        duration: 0.1,
         ease: "power3.out",
       },
       {}
     );
-    animateWithGsap("#hero-button", { opacity: 1, x: 0, delay: 0.2 }, {});
+    animateWithGsap("#hero-button", { opacity: 1, x: 0, delay: 0.1 }, {});
     animateWithGsap(
       ".social-link",
-      { opacity: 1, x: 0, delay: 0.2, rotate: 0, ease: "power3.out" },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 0.2,
+        delay: 0.1,
+        rotate: 0,
+        ease: "power3.out",
+      },
       {}
     );
   }, []);
 
   return (
-    <section id="Home" className="w-full h-screen hero-gradient relative overflow-hidden">
+    <section
+      id="Home"
+      className="w-full h-screen hero-gradient relative overflow-hidden"
+    >
       <div className="w-full h-full flex flex-col gap-5 items-center justify-center">
         <p ref={job} className="hero-text text-purple-500">
           Web Developer
