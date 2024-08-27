@@ -11,10 +11,13 @@ import prisma from "../../public/assests/prisma-4.svg";
 import node from "../../public/assests/nodejs-3.svg";
 import mongo from "../../public/assests/mongodb-icon-1.svg";
 import netfix_clone from "../../public/projects/netflix.jpg";
-import pf from "../../public/projects/portfolio.png";
 import threepo from "../../public/projects/threepo.png";
 import pf2 from "../../public/projects/pf.png";
 import iphone from "../../public/projects/iphone.png";
+import hb from "../../public/projects/horizon_banking.png";
+import ld from "../../public/projects/live_docs.png";
+import bgr from "../../public/projects/bgr.png";
+import eh from "../../public/projects/energyhive.png";
 
 export const navLists = ["Home", "About Me", "Skills", "Projects"];
 
@@ -71,23 +74,53 @@ export const skillsList = [
 
 export const projectsList = [
   {
+    id: "6",
+    name: "Horizon Banking",
+    description:
+      "Built with Next.js, Horizon is a financial SaaS platform that connects to multiple bank accounts, displays transactions in real-time, allows users to transfer money to other platform users, and manages their finances altogether.",
+    imagePath: hb,
+    githubLink: "https://github.com/ahmedcharfeddine013/banking_web_app",
+    status: "notcompleted",
+    liveLink: "",
+  },
+  {
+    id: "7",
+    name: "Live Docs",
+    description:
+      "Built with Next.js to handle the user interface, Liveblocks for real-time features and styled with TailwindCSS, LiveDocs is a clone of Goole Docs. The primary goal is to demonstrate the developer's skills in realtime enviroment that creates a lasting impact.",
+    imagePath: ld,
+    githubLink: "https://github.com/ahmedcharfeddine013/live_docs",
+    status: "notcompleted",
+    liveLink: "",
+  },
+  {
+    id: "8",
+    name: "Energyhive",
+    description:
+      "This project was part of a hackaton where me and my team got the 4th place, i was responsible for designing the website and developing it.",
+    imagePath: eh,
+    githubLink: "https://github.com/ahmedcharfeddine013/dione_energy",
+    status: "notcompleted",
+    liveLink:
+      "https://energyhive-44sew1ndq-ahmedcharfeddine013s-projects.vercel.app/",
+  },
+  {
+    id: "9",
+    name: "BGR",
+    description:
+      "BGR is a personal SAAS project where i wanted to make photo editor website and currently still working on it.",
+    imagePath: bgr,
+    githubLink: "https://github.com/ahmedcharfeddine013/bg-remover",
+    status: "notcompleted",
+    liveLink: "",
+  },
+  {
     id: "1",
     name: "Nextflix Clone",
     description:
       "In this Project i have tried to test my experience in real project and Just decided to make this Netflix UI.",
     imagePath: netfix_clone,
     githubLink: "https://github.com/ahmedcharfeddine013/Netflix-Clone",
-    status: "completed",
-    liveLink: "",
-  },
-  {
-    id: "2",
-    name: "Portfolio Project",
-    description:
-      "This portfolio was made using Next Js for development. It's nothing but a simple pleasing portfolio. I have used several technologies such as tailwind css, ShadCn UI, ... This Project is open to be used as a template for easier work.",
-    imagePath: pf,
-    githubLink:
-      "https://github.com/ahmedcharfeddine013/portfolio_ahmed_charfeddine",
     status: "completed",
     liveLink: "",
   },
@@ -111,6 +144,7 @@ export const projectsList = [
     status: "In Progress",
     liveLink: "https://movie-catalog-synexoo.vercel.app/",
   },
+
   {
     id: "5",
     name: "Portfolio Project v2",
